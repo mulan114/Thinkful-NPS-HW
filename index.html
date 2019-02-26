@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thinkful NPS Assignment</title>
+</head>
+<body>
+	<form>
+		<label>States for which you want to see National Parks (two letter state codes separated by commas): </label>
+		<input type="text" id="js-states" required>
+		<br>
+		<label>Maximum number of results: </label>
+		<input type="number" id="js-max-results" value="10">
+		<button>Search</button>
+	</form>
+
+	<div id="results" class="hidden">
+		<h1>National Parks in your search (alphabeltically):</h1>
+		<ul id="results-list"></ul> 
+	</div>
+
+	<script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
+  	<script src="./index.js"></script>
+</body>
+</html>
